@@ -34,6 +34,8 @@ EXIT;
 
 cd /var/www/html
 
+sudo rm index.html
+
 sudo wget https://wordpress.org/latest.tar.gz
 
 sudo tar -xvzf latest.tar.gz
@@ -126,6 +128,8 @@ sudo systemctl start apache2
 
 # Step 4: Download and extract WordPress
 cd /var/www/html
+
+sudo rm index.html
 
 sudo wget https://wordpress.org/latest.tar.gz
 

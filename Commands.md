@@ -120,10 +120,12 @@ ssh -i your-key.pem ubuntu@your-web-ec2-public-ip
 
 # Step 2: Update system and install Apache and PHP
 sudo apt update -y && sudo apt upgrade -y
+
 sudo apt install apache2 php php-mysql wget unzip -y
 
 # Step 3: Start and enable Apache
 sudo systemctl enable apache2
+
 sudo systemctl start apache2
 
 # Step 4: Download and extract WordPress
